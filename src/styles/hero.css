@@ -1,0 +1,47 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw; /* Push hero section below navbar */
+    padding: 12vw 4vw; /* Padding for spacing */
+    text-align: center; /* Centered text */
+    height: max-content;
+    margin-inline: auto;
+    width: 80%; /* Width of the hero section */
+    border-radius: 10px; /* Rounded corners */
+    background-image: url("../assets/Images/hero-background.jpg"); /* Background image */
+    background-size: cover;
+    background-position: 10% 30%; /* Position the background image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero-content {
+    max-width: 800px; /* Limit content width */
+}
+
+.hero h1 {
+    font-size: 3em; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero p {
+    color: white;
+    font-size: 1.2em; /* Slightly larger paragraph text */
+    line-height: 1.5; /* Improved line spacing */
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+.hero-buttons a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.hero-buttons a{
+    padding: 10px 20px;
+}
+

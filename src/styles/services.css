@@ -1,0 +1,50 @@
+.services {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: max-content;
+    margin-inline: auto;
+    width: 80%;
+}
+
+.services h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .card {
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.services .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.services .scard-body {
+    padding: 1.5rem;
+    align-content: center;
+}
+
+.services .card-body a{
+    align-content: flex-end;
+}
+
+.services .scard-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .card-text {
+    margin-bottom: 1rem;
+}

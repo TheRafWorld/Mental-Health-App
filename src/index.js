@@ -1,0 +1,7 @@
+export { default as Navbar } from './components/Navbar.jsx'
+export { default as Footer } from './components/Footer.jsx'
+export { default as Home } from './routes/Home.jsx'
+export { default as Resources } from './routes/Resources.jsx'
+export { default as Appointments } from './routes/Appointments.jsx'
+export { default as Community } from './routes/Community.jsx'
+export { default as Blog } from './routes/Blog.jsx'

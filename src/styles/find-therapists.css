@@ -1,0 +1,172 @@
+/* --- UPDATED SECTIONS --- */
+
+/* Sidebar Layout */
+.filter-sidebar {
+    border-right: 1px solid #eee;
+    padding: 2rem 1rem;
+    /* FIX: Ensure the container doesn't clip the dropdown */
+    overflow: visible !important; 
+}
+
+.sticky-filter-wrapper {
+    position: sticky;
+    top: 20px;
+    /* FIX: Allow dropdowns to "leak" outside the sticky container */
+    overflow: visible !important; 
+    z-index: 100;
+}
+
+/* Category Dropdown Specific Fix */
+.filter-sidebar .form-select {
+    cursor: pointer;
+    /* Adds space below to encourage the browser to open downward */
+    margin-bottom: 2rem !important; 
+}
+
+/* --- REST OF YOUR CSS (KEEP AS IS) --- */
+
+.find-therapists {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 0rem 1.5rem;
+}
+
+.find-therapists aside {
+    text-align: left;
+}
+
+.filter-sidebar .form-check-input, 
+.form-check-label,
+.clear-filters-btn,
+.facility-link {
+    cursor: pointer;
+}
+
+.service-filter-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.clear-filters-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+    background-color: #e2e6ea;
+    color: #343a40;
+    border-color: #adb5bd;
+}
+
+.results-scroll-container {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.facility-card {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.facility-name {
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.facility-link {
+    text-decoration: none;
+    color: #2b7fff;
+    transition: opacity 0.2s ease;
+    text-decoration: underline;
+}
+
+.facility-link:hover {
+    opacity: 0.8;
+}
+
+.facility-address {
+    font-style: normal;
+    color: #555;
+    line-height: 1.6;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.phone-icon {
+    color: #e91e63;
+}
+
+.card-actions {
+    margin-top: 15px;
+}
+
+.card-actions .btn {
+    font-size: 0.85rem;
+    padding: 5px 15px;
+    border-radius: 20px; /* Gives them a modern pill shape */
+    transition: all 0.2s ease;
+}
+
+/* Make sure the map icon/emoji doesn't look weird */
+.card-actions a {
+    text-decoration: none;
+}
+
+.no-results-box {
+    padding: 3rem;
+    background-color: #fcfcfc;
+    border: 2px dashed #eee;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.search-section {
+    padding-bottom: 2rem;
+}
+
+.service-filter-list::-webkit-scrollbar,
+.results-scroll-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.service-filter-list::-webkit-scrollbar-track,
+.results-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.service-filter-list::-webkit-scrollbar-thumb,
+.results-scroll-container::-webkit-scrollbar-thumb {
+    background: #2b7fff;
+    border-radius: 10px;
+}
+
+.service-filter-list::-webkit-scrollbar-thumb:hover,
+.results-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #1a56b3;
+}

@@ -1,0 +1,125 @@
+.app-navbar {
+    height: min-content;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-navbar a {
+    text-decoration: none;
+}
+
+.app-navbar :hover {
+    color: skyblue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.app-navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+.app-navbar-brand h1{
+    margin: 0;
+    font-size: larger;
+    padding: 0rem 0.5rem;
+}
+
+.app-navbar-logo {
+    height: 6rem;
+    padding: 0.5rem 0rem;
+}
+
+.app-navbar-menu {
+    display: block;
+    font: 500 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+.app-navbar-menu-icon {
+    display: none;
+}
+
+.app-navbar-item {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none; /* Reset link underline */
+    background-color: transparent;
+    transition: all 0.3s ease;
+    display: inline-block; /* Ensures padding and margin behave like a button */
+    cursor: pointer;
+}
+
+/* Hover state */
+.app-navbar-item:hover {
+    background-color: rgba(135, 206, 235, 0.2);
+    color: skyblue;
+    text-decoration: none;
+}
+
+/* Active state (applied by React Router) */
+.app-navbar-item.active {
+    background-color: skyblue;
+    color: #333;
+}
+
+
+@media (max-width: 1000px) {
+
+    .app-navbar {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .app-navbar-scaler {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    .app-navbar-menu::before {
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        margin: 4px 0;
+    }
+
+    .app-navbar-menu-icon {
+        display: flex;
+        border-radius: 0.5rem;
+    }
+
+    .app-navbar-menu.open {
+        display: flex;
+    }
+
+    .app-navbar-menu {
+        display: none;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        gap: 0rem;
+    }
+
+    .app-navbar-item {
+        margin: 0.2rem 0.5rem;
+        display: block;
+        text-align: center;
+    }
+}
+

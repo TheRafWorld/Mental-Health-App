@@ -1,0 +1,16 @@
+export { default as heroBackground } from '../assets/Images/hero-background.jpg';
+export { default as service1img } from '../assets/Images/service-1.jpeg';
+export { default as service2img } from '../assets/Images/service-2.jpeg';
+export { default as service3img } from '../assets/Images/service-3.png';
+export { default as testimonial1 } from '../assets/Images/testimonial1.jpeg';
+export { default as testimonial2 } from '../assets/Images/testimonial2.jpeg';
+export { default as testimonial3 } from '../assets/Images/testimonial3.jpg';
+export { default as testimonial4 } from '../assets/Images/testimonial4.jpg';
+export { default as testimonial5 } from '../assets/Images/testimonial5.jpg';
+export { default as testimonial6 } from '../assets/Images/testimonial6.jpg';
+export { default as testimonial7 } from '../assets/Images/testimonial7.jpg';
+export { default as testimonial8 } from '../assets/Images/testimonial8.jpg';
+export { default as testimonial9 } from '../assets/Images/testimonial9.jpg';
+export { default as testimonial10 } from '../assets/Images/testimonial10.jpg';
+export { default as testimonial11 } from '../assets/Images/testimonial11.jpg';
+export { default as testimonial12 } from '../assets/Images/testimonial12.jpg';

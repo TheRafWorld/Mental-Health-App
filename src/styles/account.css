@@ -1,0 +1,189 @@
+.account-page {
+    background-color: #f8fafc;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.account-container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.auth-card, .dashboard-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+/* --- THE INPUT TAG STYLING --- */
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    padding-right: 60px;
+}
+
+.char-tag {
+    position: absolute;
+    right: 12px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    pointer-events: none;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #475569;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+textarea {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2b7fff;
+    box-shadow: 0 0 0 3px rgba(43, 127, 255, 0.1);
+}
+
+/* --- BUTTON HOVER EFFECTS --- */
+
+/* Primary Button (Login/Signup) */
+.btn-primary {
+    background: #2b7fff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1a5bc2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(43, 127, 255, 0.3);
+}
+
+/* Secondary Button (Updates) */
+.btn-secondary {
+    background: white;
+    color: #2b7fff;
+    border: 1px solid #2b7fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #2b7fff;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Logout Button */
+.btn-logout {
+    margin-top: 25px;
+    background: #fff1f0;
+    color: #ef4444;
+    border: 1px solid #ffa39e;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #2b7fff;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.btn-link:hover {
+    color: #1a5bc2;
+}
+
+/* --- MESSAGES & BOXES --- */
+.status-msg {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+.status-msg.success { background: #dcfce7; color: #15803d; border: 1px solid #b7eb8f; }
+.status-msg.error { background: #fee2e2; color: #b91c1c; border: 1px solid #ffccc7; }
+
+.settings-box {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.settings-box h3 {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.loader-container { height: 80vh; display: flex; justify-content: center; align-items: center; }
+.loader { width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #2b7fff; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }

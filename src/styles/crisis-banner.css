@@ -1,0 +1,22 @@
+.help-banner {
+    width: 100%;
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.help-banner a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.help-banner span,
+.help-banner a {
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
